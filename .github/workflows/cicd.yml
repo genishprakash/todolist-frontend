@@ -23,7 +23,7 @@ jobs:
     runs-on: self-hosted 
     steps:
       - name: Pull image from docker hub
-        run: docker pull    genishprakash/todolist-frontend:latest 
+        run: docker pull genishprakash/todolist-frontend:latest 
       - name: Delete old container
         run: docker rm -f todolist-frontend-container
       - name: Run Docker Container
