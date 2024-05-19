@@ -1,0 +1,62 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#task{
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border:none;
+}
+#task:focus{
+    outline: none;
+    border: none;
+}
+
+#description{
+    font-family: inherit;
+    font-size: 1rem;
+    border:none;
+}
+#description:focus{
+    outline: none;
+    border: none;
+}
+#date{
+    width:20%;
+    border:none;
+}
+#date:focus{
+    outline: none;
+    border: none;
+}
+.buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    gap:10px;
+}
+.cancel_button{
+    background-color: rgb(243, 240, 240);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.cancel_button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.task_button{
+    background-color: #dc4c3e;
+    padding: 10px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.task_button:hover{
+    background-color: #b33f3a;
+}
