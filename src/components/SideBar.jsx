@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Projects from "./Projects.jsx"
+import ProjectsSideBar from "./ProjectsSideBar.jsx"
 import styles from './SideBar.module.css'
+import { Link } from "react-router-dom";
 const SideBar = (props) => {
 
     return (
@@ -9,12 +10,12 @@ const SideBar = (props) => {
             <ul className={styles.list}>
                 <button onClick={props.showAddTask}>Add task</button>
                 <li >Search</li>
-                <li>Inbox</li>
-                <li>Today</li>
-                <li>Upcoming</li>
+                <li><Link to="/inbox">Inbox</Link></li>
+                <li><Link to="/today">Today</Link></li>
+                <li><Link to="/Upcoming">Upcoming</Link></li>
                 <li>Filters and labels</li>
             </ul>
-            <Projects></Projects>
+            <ProjectsSideBar showAddProject={props.showAddProject}></ProjectsSideBar>
         </div>
     )
 }

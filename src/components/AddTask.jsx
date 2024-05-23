@@ -13,7 +13,7 @@ const AddTask = (props) => {
                 <input type="text" name="" id={styles.description} placeholder="Description"/>
                 <input type="date" id={styles.date} placeholder="Due Date"></input>
                 <div className={styles.buttons}>
-                    <button className={styles.cancel_button}>Cancel</button>
+                    <button className={styles.cancel_button} onClick={props.onClose}>Cancel</button>
                     <button className={styles.task_button}>Add Task</button>
                 </div>
             </form>

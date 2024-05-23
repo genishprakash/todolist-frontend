@@ -1,0 +1,22 @@
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+.projects a{
+    text-decoration: none;
+    color: inherit;
+}
+.addproject_button{
+    
+   
+    border:none;
+    font-size: large;
+    
+    padding:0px 10px;
+    background-color:#f8f5f2 ;
+    font-family: inherit;
+}
+
+.addproject_button:hover{
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,44 @@
+.buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    gap:10px;
+}
+.cancel_button{
+    background-color: rgb(243, 240, 240);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.cancel_button:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.add_button{
+    background-color: #dc4c3e;
+    padding: 10px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.add_button:hover{
+    background-color: #b33f3a;
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#name_input{
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
