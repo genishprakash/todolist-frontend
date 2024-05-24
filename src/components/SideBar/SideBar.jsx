@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProjectsSideBar from "./ProjectsSideBar.jsx"
+import ProjectsSideBar from "../ProjectsSideBar/ProjectsSideBar.jsx"
 import styles from './SideBar.module.css'
 import { Link } from "react-router-dom";
 const SideBar = (props) => {

@@ -1,11 +1,11 @@
 import React from "react";
-import Modal from "../UI/Modal";
+import Modal from "../../UI/Modal";
 import styles from './AddProject.module.css'
 import { useState } from "react";
 import axios from "axios";
 import { useSelector , useDispatch} from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addProject } from "../store/projectsSlice";
+import { addProject } from "../../store/projectsSlice";
 
 const AddProject = (props) => {
 

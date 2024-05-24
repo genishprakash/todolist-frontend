@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import SideBar from './components/SideBar'
-import AddTask from './components/AddTask'
+import SideBar from './components/SideBar/SideBar'
+import AddTask from './components/AddTask/AddTask'
 import Today from './components/Today'
 import Upcoming from './components/Upcoming'
 import {Routes, Route } from 'react-router-dom';
 import Inbox from './components/Inbox'
-import Projects from './components/Projects'
-import AddProject from './components/AddProject'
+import Projects from './components/Projects/Projects'
+import AddProject from './components/AddProject/AddProject'
 import Project from './components/Project'
 import { setBaseUrl } from './store/baseUrlSlice';
 import { useDispatch } from 'react-redux';

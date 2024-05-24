@@ -2,10 +2,10 @@
 import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { useDispatch,useSelector } from 'react-redux'
-import { setProjects } from "../store/projectsSlice"
+import { setProjects } from "../../store/projectsSlice"
 import { useNavigate } from "react-router-dom"
 import styles from "./Projects.module.css"
-import { deleteProject } from "../store/projectsSlice"
+import { deleteProject } from "../../store/projectsSlice"
 const Projects = () => {
     const baseUrl = useSelector((state) => state.baseUrl.baseUrl);
     const data=useSelector((state) => state.projects);
@@ -13,7 +13,6 @@ const Projects = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const fetchData = async () => {
-
             try {
                 const response = await axios.get(`${baseUrl}/api/projects`);
                 
@@ -24,7 +23,6 @@ const Projects = () => {
             }
 
         }
-
         fetchData();
     }, []);
     
